@@ -1,0 +1,285 @@
+@media screen and (max-width: 800px) {
+    /* Header */
+    .header {
+        display: none;
+    }
+    .header-respon {
+        display: block;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        right: 0%;
+        border-bottom: 1px solid #fff;
+        height: 88px;
+        background-color: hsla(0, 0%, 100%, 0.8);
+        z-index: 600;
+        border-bottom: none;
+    }
+    .active-header-respon {
+        background-color: #fff !important;
+    }
+    .logo-title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .navbar-respon {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        height: 100%;
+        /* margin: 0 10px; */
+        padding: 0 16px;
+    }
+    .logo {
+        line-height: 88px;
+    }
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .menu-icon {
+        font-size: 25px;
+        color: #a9a9aa;
+        display: none;
+        cursor: pointer;
+        line-height: 88px;
+    }
+    .active-menu-btn {
+        display: block;
+    }
+    .menu-dropdown-respon {
+        background-color: #fff;
+        width: 100%;
+        height: 60vh;
+        padding-top: 10px;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all .5s;
+    }
+    .menu-dropdown-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    .menu-dropdown-item {
+        min-width: 90px;
+        text-align: center;
+    }
+    .menu-dropdown-item a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: #b3b3b6;
+        font-size: 1.2rem;
+        font-weight: 600;
+        min-width: 90px;
+    }
+    .active-menu-dropdown {
+        padding: 10px 10px;
+        background-color: #FF9240;
+        border-radius: 10px;
+        opacity: .7;
+        color: #FFFFA9 !important;
+    }
+    .show {
+        transform: translateX(0);
+        opacity: 1 !important;
+    }
+    /* Intro */
+    .intro-section {
+        background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.7)), url(https://images.unsplash.com/photo-1608541737042-87a12275d313?ixlib=rb-1.2.1);
+        opacity: 1;
+        background-size: cover, cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-content-wrapper {
+        margin-top: 50px;
+    }
+    .intro-desc {
+        color: rgb(44, 45, 85);
+        text-align: center;
+    }
+    .intro-desc-title {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .intro-sub-title {
+        flex-wrap: wrap;
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        color: rgb(44, 45, 85);
+    }
+    .hotline {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hotline-btn {
+        /* margin: 0 auto; */
+        width: 30%;
+        flex-wrap: nowrap;
+        color: rgb(44, 45, 85);
+        border: 2px solid rgb(44, 45, 85);
+    }
+    .hotline-number {
+        color: rgb(44, 45, 85);
+        font-size: 12px;
+        margin-left: 0;
+    }
+    /* Service */
+    .service-section {
+        padding: 40px 0;
+    }
+    .service-list {
+        margin: 40px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: rgba(110, 105, 105, 0.19) 0px 10px 20px, rgba(110, 105, 105, 0.19) 0px 6px 6px;
+    }
+    .service-item {
+        width: 100%;
+        margin: 20px 10px;
+    }
+    .line {
+        height: 2px;
+        width: 150px;
+        top: 0 !important;
+        left: auto;
+    }
+    .service-item i {
+        font-size: 70px;
+        padding: 10px 0;
+    }
+    .service-desc {
+        margin: 0;
+        font-size: 10px;
+    }
+    .service-item-title {
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    /* Category */
+    .category-section {
+        padding: 40px 0;
+    }
+    .caretogy-title {
+        text-align: center;
+        font-size: 1.9rem;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .tab-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .active-tab-menu {
+        background-color: #fff;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 15px;
+        color: rgb(44, 45, 85) !important;
+        text-decoration: none;
+    }
+    .tab-menu::after {
+        position: absolute;
+        bottom: 0;
+        left: 1;
+        width: 90%;
+        height: 2px;
+        background-color: #d1d9df;
+        content: "";
+    }
+    .tab-menu-item {
+        padding: 15px 8px;
+        margin: 0 10px;
+        min-width: 100px;
+        font-size: 13px;
+    }
+    .menu-product {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+    }
+    .menu-product-item {
+        width: 100%;
+        height: 100%;
+        margin: 20px 0;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+        cursor: pointer;
+        display: flex;
+    }
+    .product-img {
+        width: 30%;
+    }
+    .product-title {
+        margin-top: 20px;
+        display: block;
+    }
+    .product-condition {
+        margin: 50px 0 0;
+    }
+    .product-desc {
+        margin: 0px 20px 0px;
+    }
+    .product-img {
+        padding: 0px 0 0;
+    }
+    .product-img-respon {
+        height: 100%;
+        border-radius: 15px 0px 0px 15px;
+    }
+    .view-all-product-btn a {
+        text-decoration: none;
+        background-color: rgb(44, 45, 85);
+        padding: 20px 20px;
+        color: #fff;
+        font-weight: 550;
+        font-size: 13px;
+        border-radius: 40px;
+    }
+    .view-all-product-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    /* About */
+    .about-section {
+        display: flex;
+        padding: 40px 0;
+        flex-direction: column-reverse;
+    }
+    .about-content {
+        margin: 0;
+    }
+    .about-content-title {
+        font-size: 26px;
+        width: 50%;
+    }
+    .about-content-desc {
+        margin-top: 20px;
+        line-height: 20px;
+        font-weight: 550;
+        color: rgb(165, 170, 206);
+        font-size: 14px;
+    }
+    .about-img-feature,
+    .about-content {
+        width: 90%;
+    }
+    .about-img-feature {
+        margin-top: 40px;
+    }
+}
